@@ -1,25 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Press heart ❤️</title>
-  <meta name="description" content="Haz clic en el corazón para liberar frases de amor. Optimizado para un rendimiento fluido en móviles." />
+  <title>Nuestro Primer Mes 💜</title>
+  <meta name="description" content="Haz clic en el corazón para liberar frases de amor de 'My You'. Celebrando nuestro primer mes juntos." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
   <style>
     :root {
       --bg: #0a0a0f;
       --fg: #ffffff;
       --pink: #ffd6e7;
+      --purple: #9D4BFF; /* Púrpura de BTS/JK */
       --heart: #ff2b4f;
-      --shadow: rgba(255, 43, 79, 0.6);
-      --textGlow: 0 0 .6rem rgba(255, 214, 231, .9);
+      --shadow: rgba(157, 75, 255, 0.6); /* Sombra púrpura */
+      --textGlow: 0 0 .6rem rgba(157, 75, 255, 0.7);
       --maxWidth: 1200px;
-      --messageBoxBg: rgba(139, 69, 119, 0.6); /* Rosa oscuro translúcido */
+      --messageBoxBg: rgba(139, 69, 119, 0.6);
     }
 
     * { 
@@ -31,7 +31,7 @@
       margin: 0;
       font-family: "Sour Gummy", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
       color: var(--fg);
-      background: linear-gradient(to bottom, #000000, #2a3a6b); /* Degradado nocturno más suave */
+      background: linear-gradient(to bottom, #000000, #1a0b2e); /* Degradado morado oscuro */
       overflow: hidden;
       user-select: none;
       -webkit-user-select: none;
@@ -52,7 +52,7 @@
     }
 
     .scene[data-bg="stars"] {
-      background: linear-gradient(to bottom, #000000, #2a3a6b); /* Cielo nocturno más suave */
+      background: linear-gradient(to bottom, #000000, #1a0b2e);
     }
     .scene[data-bg="stars"]::before,
     .scene[data-bg="stars"]::after {
@@ -65,39 +65,64 @@
     }
     .scene[data-bg="stars"]::before {
       background-image:
-        radial-gradient(3px 3px at 15px 25px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 45px 75px, #fff 50%, transparent 51%),
-        radial-gradient(4px 4px at 85px 45px, #fff 50%, transparent 51%), radial-gradient(3px 3px at 125px 15px, #fff 50%, transparent 51%),
-        radial-gradient(2px 2px at 165px 95px, #fff 50%, transparent 51%), radial-gradient(3px 3px at 205px 35px, #fff 50%, transparent 51%),
-        radial-gradient(4px 4px at 245px 65px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 285px 25px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 325px 85px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 365px 55px, #fff 50%, transparent 51%),
-        radial-gradient(4px 4px at 405px 15px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 445px 75px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 20px 120px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 100px 180px, #fff 50%, transparent 51%),
-        radial-gradient(4px 4px at 180px 140px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 260px 200px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 340px 160px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 420px 220px, #fff 50%, transparent 51%),
-        radial-gradient(4px 4px at 60px 300px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 140px 280px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 480px 350px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 30px 250px, #fff 50%, transparent 51%),
-        radial-gradient(4px 4px at 190px 320px, #fff 50%, transparent 51%),
-        radial-gradient(2px 2px at 380px 80px, #fff 50%, transparent 51%), radial-gradient(3px 3px at 120px 300px, #fff 50%, transparent 51%),
-        radial-gradient(4px 4px at 300px 50px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 50px 180px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 250px 150px, #fff 50%, transparent 51%), radial-gradient(2px 2px at 400px 280px, #fff 50%, transparent 51%);
+        radial-gradient(3px 3px at 15px 25px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 45px 75px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(4px 4px at 85px 45px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(3px 3px at 125px 15px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 165px 95px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(3px 3px at 205px 35px, #FF6BC9 50%, transparent 51%), /* Rosa */
+        radial-gradient(4px 4px at 245px 65px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 285px 25px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 325px 85px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 365px 55px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(4px 4px at 405px 15px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 445px 75px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 20px 120px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 100px 180px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(4px 4px at 180px 140px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 260px 200px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 340px 160px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 420px 220px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(4px 4px at 60px 300px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 140px 280px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 480px 350px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 30px 250px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(4px 4px at 190px 320px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 380px 80px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 120px 300px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(4px 4px at 300px 50px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 50px 180px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 250px 150px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(2px 2px at 400px 280px, #FF6BC9 50%, transparent 51%);
       background-size: 500px 400px;
       animation: twinkleA 4s ease-in-out infinite;
       opacity: 1;
     }
     .scene[data-bg="stars"]::after {
       background-image:
-        radial-gradient(2px 2px at 30px 40px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 70px 90px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 110px 20px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 150px 130px, #fff 50%, transparent 51%),
-        radial-gradient(2px 2px at 190px 70px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 230px 110px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 270px 50px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 310px 150px, #fff 50%, transparent 51%),
-        radial-gradient(2px 2px at 350px 30px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 390px 100px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 430px 170px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 470px 60px, #fff 50%, transparent 51%),
-        radial-gradient(2px 2px at 80px 190px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 120px 240px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 160px 210px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 200px 280px, #fff 50%, transparent 51%),
-        radial-gradient(2px 2px at 240px 220px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 280px 290px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 320px 260px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 360px 300px, #fff 50%, transparent 51%),
-        radial-gradient(2px 2px at 50px 350px, #fff 50%, transparent 51%), radial-gradient(1px 1px at 220px 30px, #fff 50%, transparent 51%),
-        radial-gradient(3px 3px at 300px 90px, #fff 50%, transparent 51%);
+        radial-gradient(2px 2px at 30px 40px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 70px 90px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 110px 20px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 150px 130px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(2px 2px at 190px 70px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 230px 110px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 270px 50px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 310px 150px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(2px 2px at 350px 30px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 390px 100px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 430px 170px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 470px 60px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(2px 2px at 80px 190px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 120px 240px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 160px 210px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 200px 280px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(2px 2px at 240px 220px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 280px 290px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 320px 260px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 360px 300px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(2px 2px at 50px 350px, #9D4BFF 50%, transparent 51%),
+        radial-gradient(1px 1px at 220px 30px, #FF6BC9 50%, transparent 51%),
+        radial-gradient(3px 3px at 300px 90px, #9D4BFF 50%, transparent 51%);
       background-size: 500px 350px;
       animation: twinkleB 6s ease-in-out infinite;
       opacity: 0.8;
@@ -120,16 +145,37 @@
       100% { opacity: 0.8; }
     }
 
+    /* Corazones flotantes */
+    .floating-heart {
+      position: absolute;
+      font-size: 24px;
+      opacity: 0.2;
+      animation: float 20s infinite linear;
+      z-index: 0;
+      pointer-events: none;
+    }
+    
+    @keyframes float {
+      0% { 
+        transform: translateY(100vh) translateX(0) rotate(0deg); 
+        opacity: 0; 
+      }
+      10% { opacity: 0.3; }
+      90% { opacity: 0.3; }
+      100% { 
+        transform: translateY(-100px) translateX(100px) rotate(360deg); 
+        opacity: 0; 
+      }
+    }
+
     .heart-container {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      /* Ajuste para móviles: mover el corazón hacia arriba */
       transform: translateY(-40px);
     }
 
-    /* Solo en pantallas más grandes, volver a la posición normal */
     @media (min-height: 800px) {
       .heart-container {
         transform: translateY(0);
@@ -141,7 +187,7 @@
       width: clamp(280px, 40vmin, 520px); 
       height: clamp(280px, 40vmin, 520px);
       border: none; background: transparent; cursor: pointer; 
-      filter: drop-shadow(0 0 40px rgba(255, 43, 79, .55));
+      filter: drop-shadow(0 0 40px rgba(157, 75, 255, 0.55));
       transition: transform .1s ease;
       z-index: 2;
     }
@@ -155,8 +201,8 @@
     .heart svg { width: 100%; height: 100%; display: block; overflow: visible; }
 
     .heart svg .core {
-      fill: var(--heart);
-      filter: drop-shadow(0 0 20px var(--shadow)) drop-shadow(0 0 40px rgba(255, 43, 79, .4));
+      fill: var(--purple);
+      filter: drop-shadow(0 0 20px var(--shadow)) drop-shadow(0 0 40px rgba(157, 75, 255, 0.4));
       animation: gentleBeat 2.5s ease-in-out infinite;
       transform-origin: 50% 50%;
     }
@@ -174,12 +220,12 @@
 
     @keyframes strongBeat {
       0% { transform: scale(1); }
-      15% { transform: scale(1.8); } /* Más grande */
-      30% { transform: scale(0.6); } /* Más pequeño */
-      45% { transform: scale(1.6); } /* Rebote grande */
-      60% { transform: scale(0.7); } /* Rebote pequeño */
-      75% { transform: scale(1.3); } /* Casi de vuelta */
-      90% { transform: scale(0.9); } /* Pequeña contracción */
+      15% { transform: scale(1.8); }
+      30% { transform: scale(0.6); }
+      45% { transform: scale(1.6); }
+      60% { transform: scale(0.7); }
+      75% { transform: scale(1.3); }
+      90% { transform: scale(0.9); }
       100% { transform: scale(1); }
     }
 
@@ -187,9 +233,9 @@
       position: absolute;
       display: inline-block;
       padding: .8em 1.4em;
-      background: var(--messageBoxBg); /* Rosa oscuro translúcido */
+      background: var(--messageBoxBg);
       border-radius: 25px;
-      border: 1px solid rgba(255,214,231,.3);
+      border: 1px solid rgba(157, 75, 255, 0.5); /* Borde morado */
       font-weight: 700;
       text-shadow: 0 2px 4px rgba(0,0,0,.6), var(--textGlow);
       pointer-events: none;
@@ -197,10 +243,26 @@
       color: var(--pink);
       opacity: 0;
       z-index: 10;
-      box-shadow: 0 8px 32px rgba(255, 43, 79, .2);
+      box-shadow: 0 8px 32px rgba(157, 75, 255, 0.3);
       transform: translate(-50%, -50%);
       white-space: nowrap;
       will-change: transform, opacity;
+      backdrop-filter: blur(5px);
+    }
+
+    /* Frase especial My You */
+    .phrase.my-you-special {
+      background: rgba(157, 75, 255, 0.8);
+      color: white;
+      font-size: clamp(18px, 2.8vw, 32px);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 40px rgba(157, 75, 255, 0.6);
+      animation: specialGlow 2s infinite alternate;
+    }
+
+    @keyframes specialGlow {
+      from { box-shadow: 0 0 20px rgba(157, 75, 255, 0.6); }
+      to { box-shadow: 0 0 40px rgba(157, 75, 255, 0.9); }
     }
 
     .phrase.shooting {
@@ -233,7 +295,7 @@
       position: absolute;
       width: 4px;
       height: 4px;
-      background: var(--heart);
+      background: var(--purple);
       border-radius: 50%;
       pointer-events: none;
       z-index: 1;
@@ -243,6 +305,30 @@
 
     .particle.burst {
       animation: particleBurst 1s ease-out forwards;
+    }
+
+    /* Notas musicales especiales */
+    .music-note {
+      position: absolute;
+      font-size: 28px;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 1;
+      animation: noteFloat 2s ease-out forwards;
+    }
+
+    @keyframes noteFloat {
+      0% {
+        opacity: 0;
+        transform: translateY(0) rotate(0deg);
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-100px) rotate(360deg);
+      }
     }
 
     @keyframes particleBurst {
@@ -259,22 +345,22 @@
     /* Reproductor de música */
     .music-player {
       position: fixed;
-      top: 20px; /* Movido a la parte superior */
+      top: 20px;
       left: 50%;
       transform: translateX(-50%);
-      background: var(--messageBoxBg);
-      padding: 10px 18px; /* Reducido el padding vertical */
-      border-radius: 20px; /* Más redondeado pero menos alto */
-      border: 1px solid rgba(255,214,231,.3);
-      box-shadow: 0 8px 32px rgba(255, 43, 79, .2);
+      background: rgba(157, 75, 255, 0.15);
+      padding: 10px 18px;
+      border-radius: 20px;
+      border: 1px solid rgba(157, 75, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(157, 75, 255, 0.2);
       display: flex;
       align-items: center;
-      gap: 12px; /* Reducido el gap */
+      gap: 12px;
       z-index: 100;
       backdrop-filter: blur(10px);
-      min-width: 260px; /* Reducido el ancho mínimo */
+      min-width: 260px;
       opacity: 0;
-      transform: translateX(-50%) translateY(-100%); /* Animación desde arriba */
+      transform: translateX(-50%) translateY(-100%);
       transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 
@@ -284,10 +370,10 @@
     }
 
     .play-pause-btn {
-      background: rgba(255, 43, 79, 0.8);
+      background: rgba(157, 75, 255, 0.8);
       border: none;
       border-radius: 50%;
-      width: 36px; /* Reducido ligeramente */
+      width: 36px;
       height: 36px;
       display: flex;
       align-items: center;
@@ -296,11 +382,11 @@
       color: white;
       font-size: 16px;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(255, 43, 79, 0.3);
+      box-shadow: 0 4px 15px rgba(157, 75, 255, 0.3);
     }
 
     .play-pause-btn:hover {
-      background: rgba(255, 43, 79, 1);
+      background: rgba(157, 75, 255, 1);
       transform: scale(1.05);
     }
 
@@ -314,19 +400,19 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 6px; /* Reducido el gap */
+      gap: 6px;
     }
 
     .song-info {
-      font-size: 13px; /* Reducido ligeramente */
-      color: var(--pink);
+      font-size: 13px;
+      color: #ffd6e7;
       text-shadow: 0 1px 2px rgba(0,0,0,0.5);
       font-weight: 500;
     }
 
     .progress-bar {
       width: 100%;
-      height: 3px; /* Reducido ligeramente */
+      height: 3px;
       background: rgba(255,255,255,0.2);
       border-radius: 2px;
       overflow: hidden;
@@ -335,7 +421,7 @@
 
     .progress-fill {
       height: 100%;
-      background: linear-gradient(90deg, #ff2b4f, #ff5f7a);
+      background: linear-gradient(90deg, #9D4BFF, #FF6BC9);
       border-radius: 2px;
       width: 0%;
       transition: width 0.1s ease;
@@ -344,24 +430,134 @@
     .time-display {
       display: flex;
       justify-content: space-between;
-      font-size: 11px; /* Reducido ligeramente */
+      font-size: 11px;
       color: rgba(255, 214, 231, 0.8);
       font-weight: 400;
+    }
+
+    /* Mensaje especial de aniversario */
+    .anniversary-message {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(157, 75, 255, 0.95);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      z-index: 1000;
+      border: 3px solid #ff6bc9;
+      box-shadow: 0 0 50px rgba(157, 75, 255, 0.8);
+      animation: pulse 2s infinite;
+      display: none;
+      max-width: 90%;
+      width: 400px;
+    }
+
+    @keyframes pulse {
+      0% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.05); }
+      100% { transform: translate(-50%, -50%) scale(1); }
+    }
+
+    .anniversary-message h2 {
+      color: white;
+      margin-top: 0;
+      font-size: 28px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .anniversary-message p {
+      color: #ffd6e7;
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 15px 0;
+    }
+
+    .close-btn {
+      background: #ff6bc9;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-family: inherit;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .close-btn:hover {
+      background: white;
+      color: #9D4BFF;
+      transform: scale(1.1);
+    }
+
+    /* Contador de clics */
+    .click-counter {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(157, 75, 255, 0.2);
+      padding: 8px 15px;
+      border-radius: 15px;
+      font-size: 14px;
+      color: #ffd6e7;
+      z-index: 50;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(157, 75, 255, 0.3);
+    }
+
+    /* Título romántico */
+    .romantic-title {
+      position: fixed;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: white;
+      z-index: 1;
+      text-shadow: 0 0 20px rgba(157, 75, 255, 0.7);
+      font-size: clamp(20px, 4vw, 32px);
+      width: 90%;
+    }
+
+    .romantic-title h1 {
+      margin: 0;
+      font-size: 1.2em;
+      background: linear-gradient(45deg, #ffd6e7, #9D4BFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .romantic-title .subtitle {
+      font-size: 0.6em;
+      color: #ffd6e7;
+      margin-top: 5px;
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
   <div class="scene" id="scene" data-bg="stars">
 
+    <!-- Título romántico -->
+    <div class="romantic-title">
+      <h1>Nuestro Primer Mes 💜</h1>
+      <div class="subtitle">Con amor de Sebastian para Kumyko • "My You" de JK</div>
+    </div>
+
     <div class="heart-container">
-      <button class="heart-btn" id="heartBtn">
+      <button class="heart-btn" id="heartBtn" aria-label="Presiona para liberar frases de amor">
         <span class="heart">
           <svg viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <radialGradient id="g" cx="50%" cy="40%" r="70%">
-                <stop offset="0%" stop-color="#ff5f7a" />
-                <stop offset="40%" stop-color="#ff2b4f" />
-                <stop offset="100%" stop-color="#c91534" />
+                <stop offset="0%" stop-color="#FF6BC9" />
+                <stop offset="40%" stop-color="#9D4BFF" />
+                <stop offset="100%" stop-color="#7B2CBF" />
               </radialGradient>
             </defs>
             <path class="core" d="M100,162.2C17.7,99.5,6,77.5,6,52.3C6,27.1,27.1,6,52.3,6c15.4,0,30.8,7.7,40,20.6l7.7,9.6l7.7-9.6 c9.2-12.9,24.6-20.6,40-20.6c25.2,0,46.3,21.1,46.3,46.3c0,25.2-11.7,47.2-94,109.9L100,162.2L100,162.2z" fill="url(#g)"/>
@@ -373,7 +569,7 @@
 
     <!-- Reproductor de música -->
     <div class="music-player" id="musicPlayer">
-      <button class="play-pause-btn" id="playPauseBtn">
+      <button class="play-pause-btn" id="playPauseBtn" aria-label="Reproducir/Pausar">
         <svg id="playIcon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M8 5v14l11-7z"/>
         </svg>
@@ -382,7 +578,7 @@
         </svg>
       </button>
       <div class="progress-container">
-        <div class="song-info">Te dedico esta canción ❤️</div>
+        <div class="song-info">My You - Jungkook 💜 • Nuestro Primer Mes</div>
         <div class="progress-bar" id="progressBar">
           <div class="progress-fill" id="progressFill"></div>
         </div>
@@ -393,25 +589,64 @@
       </div>
     </div>
 
+    <!-- Contador de clics -->
+    <div class="click-counter" id="clickCounter">
+      Frases de amor: <span id="clickCount">0</span>
+    </div>
+
+    <!-- Mensaje especial de aniversario -->
+    <div class="anniversary-message" id="anniversaryMessage">
+      <h2>🎉 ¡Nuestro Primer Mes! 🎉</h2>
+      <p>30 días contigo, 30 sonrisas,<br>30 razones para amarte más cada día.</p>
+      <p>Gracias por ser mi 'My You' 💜</p>
+      <p>Con todo mi amor,<br><strong>Sebastian</strong></p>
+      <button class="close-btn" onclick="closeAnniversaryMessage()">❤️ Guardar en mi corazón</button>
+    </div>
+
   </div>
 
-    <audio id="audioPlayer" loop preload="auto">
-      <source src="https://raw.githubusercontent.com/AlexisFloresCcalli/lovepage/main/makeitright.mp3" type="audio/mpeg">
-    </audio>
-
-
-
+  <!-- Audio con la canción de Jungkook -->
+  <audio id="audioPlayer" loop preload="auto">
+    <source src="https://raw.githubusercontent.com/AlexisFloresCcalli/lovepage/main/makeitright.mp3" type="audio/mpeg">
+    <source src="https://audio.jukehost.co.uk/1R7pVivjPZBDxer5QO66nqtC0vvyDxJm" type="audio/mpeg">
+  </audio>
 
   <script>
+    // Frases inspiradas en "My You" de Jungkook
     const PHRASES = [
-      "Eres mi mejor aventura ✨ 💖", "Contigo todo es magia 🌙 💖", 
-      "Mi refugio favorito eres tú 🏡 💖", "Tu sonrisa ilumina mi vida 🌟 💖",
-      "Eres mi canción infinita 🎶 💖", "Mi destino eres tú 💫 💖",
-      "Nuestro amor será eterno 🔥 💖", "A tu lado, soy feliz 💖",
-      "Te amo cada día más 💖", "Tu amor es mi inspiración 🎨 💖",
-      "Eres mi hogar y mi aventura 🗺️ 💖", "Contigo el tiempo se detiene ⏰ 💖"
+      "Eres mi 'My You' 💜",
+      "Mi universo eres tú 🌌",
+      "Quiero estar contigo hasta el final 🌟",
+      "Mi canción especial eres tú 🎶",
+      "Contigo todo brilla más ✨",
+      "Eres mi razón para sonreír 😊💜",
+      "Mi eternidad contigo ⏳",
+      "Eres mi paz y mi alegría ☮️💖",
+      "Mi destino eres tú 🧭💜",
+      "Gracias por ser mi 'you' ❤️",
+      "Contigo el tiempo vuela 🕰️💕",
+      "Eres mi hogar 🏡💜",
+      "Mi amor por ti crece cada día 📈💖",
+      "Eres mi sueño hecho realidad 🌠",
+      "Mi siempre y para siempre 🌙⭐",
+      "Nuestro primer mes de muchos 💌",
+      "Eres mi luz en la oscuridad 💡💜",
+      "Mi corazón late por ti 💓",
+      "Eres mi todo 🌈",
+      "Nuestra canción: My You 🎵💖",
+      "Como dice Jungkook: 'You are my universe' 🌌💜",
+      "Nuestro 'My You' en este primer mes 🥂",
+      "30 días siendo tu 'My You' 📅💖",
+      "Este mes contigo = La mejor canción 🎼",
+      "Eres mi melodía favorita 🎹💜",
+      "Nuestra historia: Capítulo 1 📖💕",
+      "Mi felicidad eres tú, como en 'My You' 😊",
+      "Este mes fue solo el preludio 🎻",
+      "Eres mi ritmo perfecto 🎧💖",
+      "Contigo todo tiene armonía 🎵💜"
     ];
 
+    // Elementos del DOM
     const scene = document.getElementById('scene');
     const heartBtn = document.getElementById('heartBtn');
     const musicPlayer = document.getElementById('musicPlayer');
@@ -421,14 +656,44 @@
     const progressFill = document.getElementById('progressFill');
     const currentTimeEl = document.getElementById('currentTime');
     const totalTimeEl = document.getElementById('totalTime');
-    
     const playIcon = document.getElementById('playIcon');
     const pauseIcon = document.getElementById('pauseIcon');
-    
+    const clickCounter = document.getElementById('clickCounter');
+    const clickCountEl = document.getElementById('clickCount');
+    const anniversaryMessage = document.getElementById('anniversaryMessage');
+
+    // Variables de estado
     let isProcessing = false;
     let firstClick = true;
     let isPlaying = false;
+    let clickCount = 0;
+    const SPECIAL_CLICK = 7; // Después de 7 clics muestra mensaje especial
 
+    // Inicializar corazones flotantes
+    function initFloatingHearts() {
+      const heartEmojis = ['💜', '💖', '✨', '🌟', '🎵'];
+      for (let i = 0; i < 15; i++) {
+        createFloatingHeart(heartEmojis[i % heartEmojis.length]);
+      }
+    }
+
+    function createFloatingHeart(emoji) {
+      const heart = document.createElement('div');
+      heart.className = 'floating-heart';
+      heart.textContent = emoji;
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDelay = Math.random() * 20 + 's';
+      heart.style.animationDuration = (15 + Math.random() * 10) + 's';
+      scene.appendChild(heart);
+      
+      // Reiniciar animación cuando termine
+      heart.addEventListener('animationend', () => {
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.top = '100vh';
+      });
+    }
+
+    // Función principal al hacer clic
     function triggerRelease(e) {
       if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') {
         return;
@@ -438,10 +703,20 @@
       if (isProcessing) return;
       isProcessing = true;
 
+      clickCount++;
+      clickCountEl.textContent = clickCount;
+
       // Activar música en el primer clic
       if (firstClick) {
         activateMusic();
         firstClick = false;
+      }
+
+      // Mostrar mensaje especial después de X clics
+      if (clickCount === SPECIAL_CLICK) {
+        setTimeout(() => {
+          showAnniversaryMessage();
+        }, 500);
       }
 
       releasePhrase();
@@ -451,6 +726,7 @@
       }, 300);
     }
 
+    // Activar música
     function activateMusic() {
       musicPlayer.classList.add('active');
       audioPlayer.play()
@@ -459,20 +735,22 @@
           showPauseIcon();
         })
         .catch(e => {
-          console.log('Error al reproducir audio:', e);
+          console.log('Reproducción automática bloqueada. Haz clic para reproducir.');
+          musicPlayer.classList.add('active'); // Mostrar player aunque no se reproduzca
         });
     }
 
+    // Control de iconos del reproductor
     function showPlayIcon() {
       playIcon.style.display = 'block';
-      pauseIcon.style.display = 'none';
-    }
+      pauseIcon.style.display    }
 
     function showPauseIcon() {
       playIcon.style.display = 'none';
       pauseIcon.style.display = 'block';
     }
 
+    // Control del reproductor de música
     function togglePlayPause() {
       if (isPlaying) {
         audioPlayer.pause();
@@ -485,13 +763,20 @@
             isPlaying = true;
           })
           .catch(e => {
-            console.log('Error al reproducir audio:', e);
+            console.log('Error al reproducir:', e);
+            // Mostrar instrucción al usuario
+            const songInfo = document.querySelector('.song-info');
+            const originalText = songInfo.textContent;
+            songInfo.textContent = 'Haz clic en el corazón para reproducir 💜';
+            setTimeout(() => {
+              songInfo.textContent = originalText;
+            }, 3000);
           });
       }
     }
 
     function updateProgress() {
-      if (audioPlayer.duration) {
+      if (audioPlayer.duration && !isNaN(audioPlayer.duration)) {
         const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
         progressFill.style.width = progress + '%';
         
@@ -509,30 +794,99 @@
     function seekAudio(e) {
       const rect = progressBar.getBoundingClientRect();
       const clickX = e.clientX - rect.left;
-      const newTime = (clickX / rect.width) * audioPlayer.duration;
-      audioPlayer.currentTime = newTime;
+      const width = rect.width;
+      
+      if (audioPlayer.duration) {
+        const newTime = (clickX / width) * audioPlayer.duration;
+        audioPlayer.currentTime = newTime;
+      }
     }
 
-    heartBtn.addEventListener('click', triggerRelease);
-    heartBtn.addEventListener('keydown', triggerRelease);
-    playPauseBtn.addEventListener('click', togglePlayPause);
-    progressBar.addEventListener('click', seekAudio);
-    audioPlayer.addEventListener('timeupdate', updateProgress);
-    audioPlayer.addEventListener('loadedmetadata', updateProgress);
+    // Mensaje especial de aniversario
+    function showAnniversaryMessage() {
+      anniversaryMessage.style.display = 'block';
+      
+      // Crear confeti especial
+      createAnniversaryConfetti();
+      
+      // Reproducir sonido especial si hay
+      try {
+        const cheer = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3');
+        cheer.volume = 0.3;
+        cheer.play();
+      } catch (e) {
+        console.log('No se pudo reproducir sonido de celebración');
+      }
+    }
 
+    function closeAnniversaryMessage() {
+      anniversaryMessage.style.display = 'none';
+    }
+
+    // Confeti especial para el mensaje de aniversario
+    function createAnniversaryConfetti() {
+      const confettiEmojis = ['💜', '💖', '✨', '🎉', '🎊', '🥂', '🎵', '🌟'];
+      
+      for (let i = 0; i < 50; i++) {
+        setTimeout(() => {
+          const confetti = document.createElement('div');
+          confetti.className = 'floating-heart';
+          confetti.textContent = confettiEmojis[Math.floor(Math.random() * confettiEmojis.length)];
+          confetti.style.left = Math.random() * 100 + 'vw';
+          confetti.style.top = '-50px';
+          confetti.style.fontSize = (20 + Math.random() * 20) + 'px';
+          confetti.style.opacity = '0.7';
+          confetti.style.animation = `float ${2 + Math.random() * 3}s ease-out forwards`;
+          scene.appendChild(confetti);
+          
+          // Remover después de animación
+          setTimeout(() => {
+            if (confetti.parentNode) {
+              confetti.parentNode.removeChild(confetti);
+            }
+          }, 3000);
+        }, i * 50);
+      }
+    }
+
+    // Crear frase de amor
     function releasePhrase() {
+      // Efecto en el corazón
       heartBtn.classList.add('clicked');
       setTimeout(() => heartBtn.classList.remove('clicked'), 700);
 
+      // Crear partículas y notas musicales
       createParticlesBurst();
-      createPhrase();
+      createMusicNotes();
+      
+      // Crear frase (con probabilidad de frase especial)
+      if (Math.random() < 0.15) { // 15% de probabilidad de frase especial My You
+        createMyYouPhrase();
+      } else {
+        createNormalPhrase();
+      }
     }
 
-    function createPhrase() {
+    function createNormalPhrase() {
       const phraseText = PHRASES[Math.floor(Math.random() * PHRASES.length)];
+      createPhraseElement(phraseText, false);
+    }
+
+    function createMyYouPhrase() {
+      const myYouPhrases = [
+        "Eres mi 'My You' 💜",
+        "Mi universo eres tú 🌌",
+        "Como dice Jungkook: 'You are my universe' 🌌💜",
+        "Nuestro 'My You' en este primer mes 🥂"
+      ];
+      const phraseText = myYouPhrases[Math.floor(Math.random() * myYouPhrases.length)];
+      createPhraseElement(phraseText, true);
+    }
+
+    function createPhraseElement(text, isSpecial) {
       const el = document.createElement('div');
-      el.className = 'phrase shooting';
-      el.textContent = phraseText;
+      el.className = `phrase shooting ${isSpecial ? 'my-you-special' : ''}`;
+      el.textContent = text;
 
       const heartRect = heartBtn.getBoundingClientRect();
       const sceneRect = scene.getBoundingClientRect();
@@ -543,6 +897,7 @@
       el.style.left = startX + 'px';
       el.style.top = startY + 'px';
 
+      // Configurar animación
       const angle = Math.random() * 120 - 150;
       const shootForce = rand(150, 230);
       const shootX = Math.cos(angle * Math.PI / 180) * shootForce;
@@ -566,7 +921,11 @@
       el.style.setProperty('--duration', duration + 's');
       
       scene.appendChild(el);
-      el.addEventListener('animationend', () => el.remove(), { once: true });
+      el.addEventListener('animationend', () => {
+        if (el.parentNode) {
+          el.parentNode.removeChild(el);
+        }
+      }, { once: true });
     }
 
     function createParticlesBurst() {
@@ -592,14 +951,132 @@
         particle.style.setProperty('--particle-y', y + 'px');
         
         scene.appendChild(particle);
-        particle.addEventListener('animationend', () => particle.remove(), { once: true });
+        particle.addEventListener('animationend', () => {
+          if (particle.parentNode) {
+            particle.parentNode.removeChild(particle);
+          }
+        }, { once: true });
       }
     }
 
+    function createMusicNotes() {
+      const notes = ['🎵', '🎶', '🎼', '🎹', '🎧'];
+      const heartRect = heartBtn.getBoundingClientRect();
+      const sceneRect = scene.getBoundingClientRect();
+      const centerX = heartRect.left + heartRect.width / 2 - sceneRect.left;
+      const centerY = heartRect.top + heartRect.height / 2 - sceneRect.top;
+
+      for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+          const note = document.createElement('div');
+          note.className = 'music-note';
+          note.textContent = notes[Math.floor(Math.random() * notes.length)];
+          note.style.left = (centerX + rand(-20, 20)) + 'px';
+          note.style.top = (centerY + rand(-20, 20)) + 'px';
+          note.style.fontSize = (20 + Math.random() * 15) + 'px';
+          
+          scene.appendChild(note);
+          note.addEventListener('animationend', () => {
+            if (note.parentNode) {
+              note.parentNode.removeChild(note);
+            }
+          }, { once: true });
+        }, i * 100);
+      }
+    }
+
+    // Funciones auxiliares
     function rand(min, max) { 
       return Math.random() * (max - min) + min; 
     }
+
+    // Event Listeners
+    heartBtn.addEventListener('click', triggerRelease);
+    heartBtn.addEventListener('keydown', triggerRelease);
+    playPauseBtn.addEventListener('click', togglePlayPause);
+    progressBar.addEventListener('click', seekAudio);
+    
+    audioPlayer.addEventListener('timeupdate', updateProgress);
+    audioPlayer.addEventListener('loadedmetadata', updateProgress);
+    audioPlayer.addEventListener('ended', () => {
+      isPlaying = false;
+      showPlayIcon();
+    });
+    
+    // Inicializar cuando la página cargue
+    window.addEventListener('DOMContentLoaded', () => {
+      initFloatingHearts();
+      
+      // Mostrar instrucción inicial
+      setTimeout(() => {
+        const instruction = document.createElement('div');
+        instruction.className = 'phrase';
+        instruction.textContent = '¡Haz clic en el corazón! 💜';
+        instruction.style.position = 'fixed';
+        instruction.style.left = '50%';
+        instruction.style.top = '70%';
+        instruction.style.transform = 'translate(-50%, -50%)';
+        instruction.style.opacity = '1';
+        instruction.style.zIndex = '100';
+        instruction.style.animation = 'pulse 2s infinite';
+        scene.appendChild(instruction);
+        
+        setTimeout(() => {
+          if (instruction.parentNode) {
+            instruction.parentNode.removeChild(instruction);
+          }
+        }, 3000);
+      }, 1000);
+      
+      // Actualizar tiempo total si está disponible
+      if (audioPlayer.readyState >= 1) {
+        updateProgress();
+      }
+    });
+
+    // Manejar errores de audio
+    audioPlayer.addEventListener('error', (e) => {
+      console.error('Error con el audio:', e);
+      const songInfo = document.querySelector('.song-info');
+      songInfo.textContent = 'Con amor para nuestro primer mes 💜';
+      
+      // Ocultar controles de progreso
+      progressBar.style.display = 'none';
+      document.querySelector('.time-display').style.display = 'none';
+    });
+
+    // Hacer la página más accesible
+    heartBtn.setAttribute('tabindex', '0');
+    heartBtn.setAttribute('role', 'button');
+    playPauseBtn.setAttribute('tabindex', '0');
+
+    // Agregar soporte para móviles
+    let touchStartY;
+    heartBtn.addEventListener('touchstart', (e) => {
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    heartBtn.addEventListener('touchend', (e) => {
+      const touchEndY = e.changedTouches[0].clientY;
+      if (Math.abs(touchEndY - touchStartY) < 10) {
+        triggerRelease(e);
+      }
+    }, { passive: true });
+
+    // Prevenir zoom en doble tap en móviles
+    document.addEventListener('dblclick', (e) => {
+      e.preventDefault();
+    }, { passive: false });
+
+    // Efecto de carga inicial
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease';
+      
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
   </script>
 </body>
 </html>
-
